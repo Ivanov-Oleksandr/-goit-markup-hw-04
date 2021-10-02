@@ -387,15 +387,10 @@ body {
 .clients-item {
   width: 170px;
   height: 92px;
-  margin: 10px;
 }
 
-.clients-item:not(:nth-child(3n)) {
-  margin-right: 10px;
-}
-
-.clients-item:nth-last-child(-n + 6) {
-  margin-bottom: 0px;
+.clients-item:not(:nth-child(6n)) {
+  margin-right: 30px;
 }
 
 .clients-link {
@@ -438,6 +433,7 @@ body {
 }
 .footer-case {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-address {
@@ -475,7 +471,7 @@ body {
 }
 
 .footer-icon-text {
-  padding-top: 12px;
+  /* padding-top: 12px; */
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -555,8 +551,12 @@ body {
   margin-bottom: 0px;
 }
 
-.card-item:hover,
-.card-item:focus {
+.card-link {
+  display: block;
+}
+
+.card-link:hover,
+.card-link:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
 }
